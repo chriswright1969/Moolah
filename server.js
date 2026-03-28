@@ -3,7 +3,7 @@ import session from "express-session";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
-import { loadContent, saveContent, getContentFilePath } from "./contentStore.js";
+import { loadContent, saveContent, getContentFilePath } from "./src/contentStore.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
