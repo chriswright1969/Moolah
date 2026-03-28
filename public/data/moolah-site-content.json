@@ -1,15 +1,15 @@
 {
   "site": {
     "businessName": "Moolah",
-    "tagline": "Local food, deli and caf\u00e9 in the former NatWest bank in Ellesmere",
-    "metaDescription": "Moolah is a local food store, deli and caf\u00e9 on Scotland Street in Ellesmere, with a licensed caf\u00e9 bar, snug seating, local produce and plenty of reasons to stay for coffee, brunch or lunch.",
-    "heroTitle": "Local food, deli finds and caf\u00e9 comfort in the heart of Ellesmere.",
-    "heroIntro": "Moolah brings together a local food shop, deli shelves, fresh produce and a relaxed caf\u00e9 atmosphere inside the former NatWest bank on Scotland Street. It is a place to browse, meet, eat, drink and take a few good things home.",
-    "aboutTitle": "A food shop and caf\u00e9 with real local character.",
-    "aboutIntro": "Public descriptions of Moolah consistently point to local produce, a licensed caf\u00e9 bar, the converted former bank building and the snug-like seating areas that make it feel different from a standard coffee stop.",
+    "tagline": "Local food, deli and café in the former NatWest bank in Ellesmere",
+    "metaDescription": "Moolah is a local food store, deli and café on Scotland Street in Ellesmere, with a licensed café bar, snug seating, local produce and plenty of reasons to stay for coffee, brunch or lunch.",
+    "heroTitle": "Local food, deli finds and café comfort in the heart of Ellesmere.",
+    "heroIntro": "Moolah brings together a local food shop, deli shelves, fresh produce and a relaxed café atmosphere inside the former NatWest bank on Scotland Street. It is a place to browse, meet, eat, drink and take a few good things home.",
+    "aboutTitle": "A food shop and café with real local character.",
+    "aboutIntro": "Public descriptions of Moolah consistently point to local produce, a licensed café bar, the converted former bank building and the snug-like seating areas that make it feel different from a standard coffee stop.",
     "aboutStory": "The website is written to reflect what visitors already respond to: coffee and cake, brunch and lunch, local food and drink, deli browsing, friendly service and a welcoming atmosphere that feels rooted in Ellesmere.",
-    "deliTitle": "More than a caf\u00e9.",
-    "deliIntro": "The deli side deserves equal space online. Moolah is known for local produce, cheeses, bread, biscuits, pies, vegetables, drinks and take-home treats as well as the caf\u00e9 offer.",
+    "deliTitle": "More than a café.",
+    "deliIntro": "The deli side deserves equal space online. Moolah is known for local produce, cheeses, bread, biscuits, pies, vegetables, drinks and take-home treats as well as the café offer.",
     "visitTitle": "Plan a visit",
     "visitIntro": "Find Moolah on Scotland Street in Ellesmere, inside the former NatWest bank building. Use the site for opening hours, current specials, menu highlights and simple contact details.",
     "phone": "01691 623532",
@@ -77,17 +77,17 @@
     },
     {
       "title": "Brunch, lunch and light bites",
-      "text": "Point visitors straight to current menu highlights, homemade options and easy caf\u00e9 favourites."
+      "text": "Point visitors straight to current menu highlights, homemade options and easy café favourites."
     },
     {
-      "title": "Licensed caf\u00e9-bar feel",
+      "title": "Licensed café-bar feel",
       "text": "Give the site a slightly more grown-up feel by showing the beer, wine and local drinks side as well."
     }
   ],
   "menuSections": [
     {
       "title": "Breakfast, brunch and lunch",
-      "intro": "Public listings and social snippets highlight breakfast, brunch, lunch and daytime caf\u00e9 dining.",
+      "intro": "Public listings and social snippets highlight breakfast, brunch, lunch and daytime café dining.",
       "items": [
         "Breakfast service",
         "Brunch favourites",
@@ -111,7 +111,7 @@
     },
     {
       "title": "Pies, deli favourites and savouries",
-      "intro": "Public comments mention veggie pies, bean and cheese pies, hummus, salads and other caf\u00e9 staples.",
+      "intro": "Public comments mention veggie pies, bean and cheese pies, hummus, salads and other café staples.",
       "items": [
         "Veggie pies",
         "Bean and cheese pies",
@@ -123,7 +123,7 @@
     },
     {
       "title": "Shop and drinks range",
-      "intro": "The shop side is regularly described as a reason to browse, with local food and drink well beyond a standard caf\u00e9 counter.",
+      "intro": "The shop side is regularly described as a reason to browse, with local food and drink well beyond a standard café counter.",
       "items": [
         "Local cheeses",
         "Bread and bakery goods",
@@ -141,7 +141,7 @@
     },
     {
       "title": "Fresh produce and pantry staples",
-      "text": "Fresh fruit and veg, bread, biscuits and useful everyday food lines help Moolah feel like a destination as well as a caf\u00e9."
+      "text": "Fresh fruit and veg, bread, biscuits and useful everyday food lines help Moolah feel like a destination as well as a café."
     },
     {
       "title": "Licensed drinks and giftable finds",
@@ -160,9 +160,9 @@
       "caption": "Swap this for a cosy interior photo showing the snug seating area."
     },
     {
-      "title": "Coffee, cake and caf\u00e9 counter",
+      "title": "Coffee, cake and café counter",
       "image": "/images/placeholder-counter.svg",
-      "caption": "Swap this for a caf\u00e9 service or counter photo."
+      "caption": "Swap this for a café service or counter photo."
     },
     {
       "title": "Deli shelves and local produce",
