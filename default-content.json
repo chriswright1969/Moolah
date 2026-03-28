@@ -1,0 +1,173 @@
+{
+  "site": {
+    "businessName": "Moolah",
+    "tagline": "Local food, deli and caf\u00e9 in the former NatWest bank in Ellesmere",
+    "metaDescription": "Moolah is a local food store, deli and caf\u00e9 on Scotland Street in Ellesmere, with a licensed caf\u00e9 bar, snug seating, local produce and plenty of reasons to stay for coffee, brunch or lunch.",
+    "heroTitle": "Local food, deli finds and caf\u00e9 comfort in the heart of Ellesmere.",
+    "heroIntro": "Moolah brings together a local food shop, deli shelves, fresh produce and a relaxed caf\u00e9 atmosphere inside the former NatWest bank on Scotland Street. It is a place to browse, meet, eat, drink and take a few good things home.",
+    "aboutTitle": "A food shop and caf\u00e9 with real local character.",
+    "aboutIntro": "Public descriptions of Moolah consistently point to local produce, a licensed caf\u00e9 bar, the converted former bank building and the snug-like seating areas that make it feel different from a standard coffee stop.",
+    "aboutStory": "The website is written to reflect what visitors already respond to: coffee and cake, brunch and lunch, local food and drink, deli browsing, friendly service and a welcoming atmosphere that feels rooted in Ellesmere.",
+    "deliTitle": "More than a caf\u00e9.",
+    "deliIntro": "The deli side deserves equal space online. Moolah is known for local produce, cheeses, bread, biscuits, pies, vegetables, drinks and take-home treats as well as the caf\u00e9 offer.",
+    "visitTitle": "Plan a visit",
+    "visitIntro": "Find Moolah on Scotland Street in Ellesmere, inside the former NatWest bank building. Use the site for opening hours, current specials, menu highlights and simple contact details.",
+    "phone": "01691 623532",
+    "email": "",
+    "address1": "Former NatWest Bank",
+    "address2": "Scotland Street",
+    "town": "Ellesmere",
+    "postcode": "SY12 0DF",
+    "facebookUrl": "https://www.facebook.com/moolahellesmere/?locale=en_GB",
+    "instagramUrl": "https://www.instagram.com/moolah_local_food/",
+    "bookingNote": "For bookings or current availability, please call the shop directly or message via Facebook."
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    {
+      "day": "Tuesday",
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    {
+      "day": "Wednesday",
+      "open": "",
+      "close": "",
+      "closed": true
+    },
+    {
+      "day": "Thursday",
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    {
+      "day": "Friday",
+      "open": "08:00",
+      "close": "18:00",
+      "closed": false
+    },
+    {
+      "day": "Saturday",
+      "open": "09:30",
+      "close": "18:00",
+      "closed": false
+    },
+    {
+      "day": "Sunday",
+      "open": "09:30",
+      "close": "18:00",
+      "closed": false
+    }
+  ],
+  "specials": [
+    {
+      "title": "Local produce on the shelves",
+      "text": "Start with a strong first impression: local food, deli finds, fresh fruit and veg, drinks and take-home treats."
+    },
+    {
+      "title": "Coffee, cake and the snug",
+      "text": "Use the homepage to sell the atmosphere as much as the menu, especially the cosy snug and lounge-style seating."
+    },
+    {
+      "title": "Brunch, lunch and light bites",
+      "text": "Point visitors straight to current menu highlights, homemade options and easy caf\u00e9 favourites."
+    },
+    {
+      "title": "Licensed caf\u00e9-bar feel",
+      "text": "Give the site a slightly more grown-up feel by showing the beer, wine and local drinks side as well."
+    }
+  ],
+  "menuSections": [
+    {
+      "title": "Breakfast, brunch and lunch",
+      "intro": "Public listings and social snippets highlight breakfast, brunch, lunch and daytime caf\u00e9 dining.",
+      "items": [
+        "Breakfast service",
+        "Brunch favourites",
+        "Lunch plates",
+        "Toasties",
+        "Salads",
+        "Light bites"
+      ]
+    },
+    {
+      "title": "Cakes, coffee and hot drinks",
+      "intro": "Reviews repeatedly mention coffee, loose leaf tea, cake and a welcoming stop-in atmosphere.",
+      "items": [
+        "Coffee",
+        "Speciality teas",
+        "Loose leaf tea",
+        "Homemade cakes",
+        "Sweet treats",
+        "Afternoon stop-ins"
+      ]
+    },
+    {
+      "title": "Pies, deli favourites and savouries",
+      "intro": "Public comments mention veggie pies, bean and cheese pies, hummus, salads and other caf\u00e9 staples.",
+      "items": [
+        "Veggie pies",
+        "Bean and cheese pies",
+        "Hummus",
+        "Savoury deli options",
+        "Freshly made food",
+        "Take-home deli finds"
+      ]
+    },
+    {
+      "title": "Shop and drinks range",
+      "intro": "The shop side is regularly described as a reason to browse, with local food and drink well beyond a standard caf\u00e9 counter.",
+      "items": [
+        "Local cheeses",
+        "Bread and bakery goods",
+        "Biscuits and pantry treats",
+        "Fresh fruit and veg",
+        "Beer and wine",
+        "Juices and local drinks"
+      ]
+    }
+  ],
+  "deliSections": [
+    {
+      "title": "Local cheeses and deli browsing",
+      "text": "Show cheeses, savouries and take-home food as part of the main journey, not tucked away at the bottom of the page."
+    },
+    {
+      "title": "Fresh produce and pantry staples",
+      "text": "Fresh fruit and veg, bread, biscuits and useful everyday food lines help Moolah feel like a destination as well as a caf\u00e9."
+    },
+    {
+      "title": "Licensed drinks and giftable finds",
+      "text": "Public descriptions mention beer, wine and local drinks. That gives the shop side a stronger premium feel."
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Front exterior",
+      "image": "/images/placeholder-exterior.svg",
+      "caption": "Swap this for an official exterior photo of the former bank frontage."
+    },
+    {
+      "title": "The snug or lounge seating",
+      "image": "/images/placeholder-snug.svg",
+      "caption": "Swap this for a cosy interior photo showing the snug seating area."
+    },
+    {
+      "title": "Coffee, cake and caf\u00e9 counter",
+      "image": "/images/placeholder-counter.svg",
+      "caption": "Swap this for a caf\u00e9 service or counter photo."
+    },
+    {
+      "title": "Deli shelves and local produce",
+      "image": "/images/placeholder-deli.svg",
+      "caption": "Swap this for a produce and deli-display photo."
+    }
+  ]
+}
