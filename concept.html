@@ -1,0 +1,526 @@
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  Clock3,
+  Coffee,
+  Leaf,
+  MapPin,
+  Menu,
+  ShoppingBag,
+  Sparkles,
+  Store,
+  UtensilsCrossed,
+  Wine,
+  Wheat,
+  Salad,
+  Package,
+  Phone,
+  Instagram,
+  Facebook,
+  Check,
+  SunMedium,
+} from "lucide-react";
+
+const nav = ["About", "Menu", "Deli", "Visit"];
+
+const highlights = [
+  {
+    icon: Coffee,
+    title: "Coffee, brunch & cake",
+    text: "Designed to feel warm, social, and worth lingering in rather than just somewhere to pass through.",
+  },
+  {
+    icon: ShoppingBag,
+    title: "Local food shop",
+    text: "A deli-led homepage that gives equal space to shelves, produce, pantry finds, and take-home treats.",
+  },
+  {
+    icon: Store,
+    title: "Former bank setting",
+    text: "The building story becomes part of the brand, helping Moolah feel memorable and rooted in Ellesmere.",
+  },
+  {
+    icon: Leaf,
+    title: "Local and thoughtful",
+    text: "Space for fresh produce, homemade ready meals, low-waste cues, and small local maker spotlights.",
+  },
+];
+
+const menuPreview = [
+  "Coffee & speciality teas",
+  "Breakfast, brunch & lunch",
+  "Soup, toasties & deli plates",
+  "Cakes, pastries & sweet treats",
+  "Local bread, pantry goods & produce",
+  "Licensed cafe-bar feel for later visits",
+];
+
+const deliGrid = [
+  { icon: Wheat, title: "Bakery & bread" },
+  { icon: Salad, title: "Fresh produce" },
+  { icon: Package, title: "Deli & take-home" },
+  { icon: Wine, title: "Drinks & gifting" },
+];
+
+const featureChips = [
+  "Local food store",
+  "Place to relax and socialise",
+  "Former NatWest bank",
+  "Coffee and cake stop",
+  "Homemade options",
+  "Bring-your-own-container friendly",
+];
+
+const hours = [
+  ["Mon", "8:00 – 18:00"],
+  ["Tue", "8:00 – 18:00"],
+  ["Wed", "Closed"],
+  ["Thu", "8:00 – 18:00"],
+  ["Fri", "8:00 – 18:00"],
+  ["Sat", "9:30 – 18:00"],
+  ["Sun", "9:30 – 18:00"],
+];
+
+const reasons = [
+  "A much brighter, more editorial identity than Truck Hearse, Magic Lantern, or Spraying Mantis.",
+  "Built around food, atmosphere, and local-produce discovery instead of a conventional brochure layout.",
+  "Uses your supplied logo as the anchor mark and colour cue for the overall visual system.",
+  "Ready to turn into a real multi-page EJS or React build with your photos, menus, and contact links.",
+];
+
+function LogoMark({ className = "h-12 w-auto" }) {
+  return (
+    <svg className={className} viewBox="0 0 595.28 841.89" aria-label="Moolah logo" role="img">
+      <path fill="#ec6968" d="M306.93,378.68l-61.51-61.74s-43.63-40.1-22.89-98.29c20.74-58.19,77.6-58.19,77.6-58.19,0,0,62.22-7.45,90.83,55,0,0,22.89,50.03-17.88,97.23l-66.16,66Z" />
+      <polygon fill="#f16866" points="180.17 524.7 198.03 299.11 206.17 299.11 306.5 407.83 407.08 299.11 416.01 299.37 435.18 524.66 407.08 524.74 392.11 354 307.81 447.23 303.87 447.23 221.4 355.84 208.8 524.74 180.17 524.7" />
+      <path fill="#feffff" d="M306.76,345.07l-45.17-45.7s-32.04-29.68-16.81-72.75c15.23-43.07,56.99-43.07,56.99-43.07,0,0,45.7-5.52,66.71,40.71,0,0,16.81,37.03-13.13,71.96l-48.59,48.85Z" />
+    </svg>
+  );
+}
+
+function SectionEyebrow({ children }) {
+  return (
+    <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-neutral-600 shadow-sm">
+      <Sparkles className="h-3.5 w-3.5" />
+      {children}
+    </div>
+  );
+}
+
+function Grain() {
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 opacity-[0.06]"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 20% 20%, #000 0.7px, transparent 0.8px), radial-gradient(circle at 75% 35%, #000 0.7px, transparent 0.8px), radial-gradient(circle at 35% 80%, #000 0.7px, transparent 0.8px)",
+        backgroundSize: "20px 20px, 24px 24px, 22px 22px",
+      }}
+    />
+  );
+}
+
+function Pill({ children }) {
+  return <div className="rounded-full border border-black/10 bg-white/70 px-3 py-2 text-sm font-medium text-neutral-700">{children}</div>;
+}
+
+export default function MoolahSiteDesign() {
+  return (
+    <div className="min-h-screen bg-[#f8f1e8] text-neutral-900">
+      <div className="relative overflow-hidden">
+        <Grain />
+        <div className="absolute -left-16 top-12 h-72 w-72 rounded-full bg-[#dce7cd] blur-3xl" />
+        <div className="absolute right-0 top-0 h-[30rem] w-[30rem] rounded-full bg-[#f5c8b0] blur-3xl" />
+        <div className="absolute left-1/2 top-[34rem] h-40 w-40 -translate-x-1/2 rounded-full bg-[#f1e09f] blur-3xl" />
+
+        <header className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+          <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e96c6b] shadow-lg shadow-black/10 ring-1 ring-black/5">
+              <LogoMark className="h-10 w-auto" />
+            </div>
+            <div>
+              <div className="text-2xl font-black tracking-tight">Moolah</div>
+              <div className="text-xs uppercase tracking-[0.24em] text-neutral-500">Local food · deli · cafe</div>
+            </div>
+          </div>
+
+          <nav className="hidden items-center gap-8 text-sm font-medium text-neutral-700 md:flex">
+            {nav.map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`} className="transition hover:text-neutral-950">
+                {item}
+              </a>
+            ))}
+          </nav>
+
+          <button className="hidden rounded-full border border-black/10 bg-white/80 px-4 py-2 text-sm font-semibold shadow-sm transition hover:-translate-y-0.5 md:block">
+            View menu
+          </button>
+
+          <button className="rounded-full border border-black/10 bg-white/80 p-2 shadow-sm md:hidden" aria-label="Open menu">
+            <Menu className="h-5 w-5" />
+          </button>
+        </header>
+
+        <main>
+          <section className="relative mx-auto grid max-w-7xl gap-10 px-6 pb-16 pt-4 lg:grid-cols-[1.1fr_0.9fr] lg:px-10 lg:pb-24 lg:pt-8">
+            <div className="flex flex-col justify-center">
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="mb-5"
+              >
+                <SectionEyebrow>Fresh concept using your supplied logo</SectionEyebrow>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.08, duration: 0.6 }}
+                className="max-w-4xl text-5xl font-black tracking-[-0.045em] text-neutral-950 sm:text-6xl lg:text-7xl"
+              >
+                A warm, editorial website for a deli, food shop, and cafe.
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.16, duration: 0.6 }}
+                className="mt-6 max-w-2xl text-lg leading-8 text-neutral-700 sm:text-xl"
+              >
+                This version takes Moolah in a completely different direction from your other sites: brighter, softer, more food-led, and more premium-local in feel. It is designed around the real cafe-plus-deli identity, the character of the former bank building, and a relaxed place-to-meet atmosphere.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.24, duration: 0.6 }}
+                className="mt-8 flex flex-wrap gap-3"
+              >
+                {featureChips.map((chip) => (
+                  <Pill key={chip}>{chip}</Pill>
+                ))}
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.32, duration: 0.6 }}
+                className="mt-8 flex flex-wrap gap-4"
+              >
+                <button className="inline-flex items-center gap-2 rounded-full bg-[#1f3d31] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/10 transition hover:-translate-y-0.5">
+                  Explore the menu
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+                <button className="rounded-full border border-black/10 bg-white/75 px-6 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition hover:-translate-y-0.5">
+                  Browse local produce
+                </button>
+              </motion.div>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.97, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ delay: 0.14, duration: 0.72 }}
+              className="relative"
+            >
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[2rem] border border-black/10 bg-[#f3d7c6] p-6 shadow-xl shadow-black/10 sm:translate-y-10">
+                  <div className="mb-8 flex items-center justify-between">
+                    <div className="rounded-2xl bg-white/80 p-3 shadow-sm">
+                      <LogoMark className="h-8 w-auto" />
+                    </div>
+                    <div className="rounded-full border border-black/10 bg-white/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-600">
+                      Brand-led
+                    </div>
+                  </div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-600">Visual mood</div>
+                  <div className="mt-3 text-3xl font-black tracking-tight leading-tight">Neighbourhood gem meets modern food journal.</div>
+                  <p className="mt-4 text-sm leading-7 text-neutral-700">
+                    Big clean type, paper-like layers, soft daylight colours, and gentle curves instead of dark cinematic blocks or industrial styling.
+                  </p>
+                </div>
+
+                <div className="rounded-[2rem] border border-black/10 bg-[#dbe7cc] p-6 shadow-xl shadow-black/10">
+                  <div className="mb-10 inline-flex rounded-2xl bg-white/80 p-3 shadow-sm">
+                    <SunMedium className="h-5 w-5" />
+                  </div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-600">Built around</div>
+                  <div className="mt-3 text-2xl font-black tracking-tight leading-tight">Coffee, deli shelves, lunch, produce, and atmosphere.</div>
+                  <p className="mt-4 text-sm leading-7 text-neutral-700">
+                    The site treats Moolah as a destination, not just a menu page with opening times.
+                  </p>
+                </div>
+
+                <div className="rounded-[2rem] border border-black/10 bg-white/85 p-6 shadow-xl shadow-black/10 sm:col-span-2">
+                  <div className="grid gap-4 md:grid-cols-3">
+                    {[
+                      ["Palette", "Oat, sage, coral, butter, deep green"],
+                      ["Typography", "Oversized editorial headlines with clean body copy"],
+                      ["Difference", "Soft, food-led, local, airy, welcoming"],
+                    ].map(([title, text]) => (
+                      <div key={title} className="rounded-2xl bg-[#f8f1e8] p-4">
+                        <div className="font-bold text-neutral-900">{title}</div>
+                        <div className="mt-2 text-sm leading-6 text-neutral-600">{text}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+
+          <section id="about" className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+            <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+              <div>
+                <SectionEyebrow>About the concept</SectionEyebrow>
+                <h2 className="mt-4 text-3xl font-black tracking-tight text-neutral-950 sm:text-4xl">
+                  A homepage built around what makes Moolah distinctive in Ellesmere.
+                </h2>
+                <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600 sm:text-lg">
+                  The design leans into the local food store identity, the cafe atmosphere, and the building’s former-bank character so the website instantly feels more individual than a standard cafe template.
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                {highlights.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, y: 14 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ delay: index * 0.06, duration: 0.42 }}
+                      className="rounded-[1.75rem] border border-black/10 bg-white/75 p-6 shadow-sm backdrop-blur"
+                    >
+                      <div className="mb-5 inline-flex rounded-2xl bg-[#f8f1e8] p-3">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <h3 className="text-lg font-black tracking-tight">{item.title}</h3>
+                      <p className="mt-3 text-sm leading-7 text-neutral-600">{item.text}</p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+
+          <section id="menu" className="mx-auto max-w-7xl px-6 py-4 lg:px-10 lg:py-8">
+            <div className="rounded-[2rem] border border-black/10 bg-[#1f3d31] p-8 text-white shadow-2xl shadow-black/10 lg:p-10">
+              <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+                <div>
+                  <SectionEyebrow>Menu and food</SectionEyebrow>
+                  <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">A menu section that feels inviting first, practical second.</h2>
+                  <p className="mt-4 max-w-xl text-base leading-7 text-white/75">
+                    Instead of making visitors hunt for a PDF straight away, the homepage can preview categories, seasonal favourites, and today’s specials before linking through to a clean full menu page.
+                  </p>
+                  <div className="mt-7 flex flex-wrap gap-3">
+                    <button className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#1f3d31] transition hover:-translate-y-0.5">
+                      View brunch menu
+                    </button>
+                    <button className="rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5">
+                      Today’s specials
+                    </button>
+                  </div>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {menuPreview.map((item) => (
+                    <div key={item} className="rounded-3xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+                      <div className="flex items-start gap-3">
+                        <div className="mt-0.5 rounded-full bg-white/15 p-1.5">
+                          <Check className="h-4 w-4" />
+                        </div>
+                        <div className="text-sm leading-6 text-white/90">{item}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="deli" className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+            <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {deliGrid.map((item, index) => {
+                  const Icon = item.icon;
+                  const bgs = ["bg-[#f3d7c6]", "bg-[#dbe7cc]", "bg-white", "bg-[#efe0a2]"];
+                  return (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, y: 14 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ delay: index * 0.07, duration: 0.42 }}
+                      className={`rounded-[1.75rem] border border-black/10 p-6 shadow-sm ${bgs[index % bgs.length]}`}
+                    >
+                      <div className="mb-6 inline-flex rounded-2xl bg-white/80 p-3 shadow-sm">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <div className="text-xl font-black tracking-tight">{item.title}</div>
+                      <p className="mt-3 text-sm leading-7 text-neutral-700">
+                        This area gives the shop side of Moolah real visual weight so visitors instantly understand they can browse and buy as well as eat in.
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+
+              <div>
+                <SectionEyebrow>Deli-first storytelling</SectionEyebrow>
+                <h2 className="mt-4 text-3xl font-black tracking-tight text-neutral-950 sm:text-4xl">
+                  The shop side should be a major reason to visit the website.
+                </h2>
+                <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600 sm:text-lg">
+                  The design makes room for produce, bread, deli goods, take-home meals, giftable finds, and local supplier stories. That gives the website a stronger point of difference than a typical cafe homepage.
+                </p>
+                <div className="mt-8 rounded-[2rem] border border-black/10 bg-white/80 p-6 shadow-sm">
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {[
+                      "Meet our local makers",
+                      "New arrivals and seasonal highlights",
+                      "Buy-by-weight and low-waste messaging",
+                      "Take-home deli favourites",
+                    ].map((text) => (
+                      <div key={text} className="rounded-2xl bg-[#f8f1e8] px-4 py-4 text-sm font-medium text-neutral-700">
+                        {text}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mx-auto max-w-7xl px-6 py-4 lg:px-10 lg:py-8">
+            <div className="grid gap-6 rounded-[2rem] border border-black/10 bg-white/80 p-8 shadow-sm backdrop-blur lg:grid-cols-[1fr_auto_auto] lg:items-center">
+              <div>
+                <div className="text-2xl font-black tracking-tight">Use the building story as part of the brand.</div>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-neutral-600">
+                  A short section about the former NatWest bank building, interior atmosphere, and snug-style seating makes the website feel rooted in place and gives it more character than a generic coffee shop site.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-[#f8f1e8] px-5 py-4">
+                <div className="text-xs uppercase tracking-[0.22em] text-neutral-500">Suggested page</div>
+                <div className="mt-2 font-bold">About the building</div>
+              </div>
+              <div className="rounded-3xl bg-[#f8f1e8] px-5 py-4">
+                <div className="text-xs uppercase tracking-[0.22em] text-neutral-500">Suggested page</div>
+                <div className="mt-2 font-bold">Local suppliers</div>
+              </div>
+            </div>
+          </section>
+
+          <section id="visit" className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+            <div className="grid gap-8 lg:grid-cols-[0.96fr_1.04fr]">
+              <div className="rounded-[2rem] border border-black/10 bg-[#f3d7c6] p-8 shadow-sm">
+                <div className="mb-6 inline-flex rounded-2xl bg-white/80 p-3 shadow-sm">
+                  <MapPin className="h-5 w-5" />
+                </div>
+                <div className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-600">Visit section</div>
+                <h3 className="mt-3 text-3xl font-black tracking-tight">Make visiting feel effortless.</h3>
+                <div className="mt-6 space-y-4 text-sm leading-7 text-neutral-700">
+                  <div className="rounded-2xl bg-white/75 p-4 shadow-sm">
+                    <div className="flex items-center gap-2 font-semibold text-neutral-900">
+                      <MapPin className="h-4 w-4" />
+                      Former NatWest Bank, Scotland Street, Ellesmere
+                    </div>
+                    <p className="mt-2 text-neutral-600">The location card can include a map, parking notes, and a simple “how to find us” block.</p>
+                  </div>
+
+                  <div className="rounded-2xl bg-white/75 p-4 shadow-sm">
+                    <div className="flex items-center gap-2 font-semibold text-neutral-900">
+                      <Phone className="h-4 w-4" />
+                      Add tap-to-call and booking/contact actions
+                    </div>
+                    <p className="mt-2 text-neutral-600">Perfect for mobile visitors deciding quickly where to stop for coffee, brunch, or local food shopping.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-[2rem] border border-black/10 bg-[#1b1b1b] p-8 text-white shadow-xl shadow-black/10">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-[0.22em] text-white/60">Hours panel</div>
+                    <h3 className="mt-3 text-3xl font-black tracking-tight">Opening hours</h3>
+                  </div>
+                  <div className="rounded-2xl bg-white/10 p-3">
+                    <Clock3 className="h-5 w-5" />
+                  </div>
+                </div>
+
+                <div className="mt-8 grid gap-3">
+                  {hours.map(([day, time]) => (
+                    <div key={day} className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                      <span className="font-semibold text-white/90">{day}</span>
+                      <span className="text-white/70">{time}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mx-auto max-w-7xl px-6 pb-6 lg:px-10">
+            <div className="rounded-[2rem] border border-black/10 bg-[#dbe7cc] p-8 shadow-sm lg:p-10">
+              <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+                <div>
+                  <SectionEyebrow>Why this direction works</SectionEyebrow>
+                  <div className="mt-4 grid gap-3">
+                    {reasons.map((item) => (
+                      <div key={item} className="rounded-2xl bg-white/70 px-4 py-4 text-sm leading-7 text-neutral-700 shadow-sm">
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-[2rem] border border-black/10 bg-white/75 p-6 shadow-sm">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#e96c6b] shadow-sm">
+                      <LogoMark className="h-11 w-auto" />
+                    </div>
+                    <div>
+                      <div className="text-xl font-black tracking-tight">Moolah</div>
+                      <div className="text-sm text-neutral-600">A brighter, more distinctive web identity</div>
+                    </div>
+                  </div>
+                  <div className="mt-6 flex gap-3">
+                    <a href="#" className="rounded-full border border-black/10 bg-white px-3 py-2 text-sm text-neutral-700 shadow-sm">
+                      <Facebook className="h-4 w-4" />
+                    </a>
+                    <a href="#" className="rounded-full border border-black/10 bg-white px-3 py-2 text-sm text-neutral-700 shadow-sm">
+                      <Instagram className="h-4 w-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mx-auto max-w-7xl px-6 py-10 lg:px-10 lg:py-14">
+            <div className="grid gap-6 rounded-[2rem] border border-black/10 bg-white/80 p-8 shadow-sm lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <div className="text-3xl font-black tracking-tight">Next step: turn this into the full live site.</div>
+                <p className="mt-4 max-w-3xl text-base leading-7 text-neutral-600">
+                  From here this design can be converted into a proper multi-page build with homepage, menus, contact page, supplier page, and editable admin-friendly content blocks for hours, specials, and social links.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <button className="rounded-full bg-[#1f3d31] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/10 transition hover:-translate-y-0.5">
+                  Build full site
+                </button>
+                <button className="rounded-full border border-black/10 bg-[#f8f1e8] px-6 py-3 text-sm font-semibold text-neutral-900 transition hover:-translate-y-0.5">
+                  Add real photos and menus
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  );
+}
